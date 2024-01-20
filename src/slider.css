@@ -1,0 +1,155 @@
+.slider-container{
+ position: relative;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+}
+
+.background1{
+    width: 100vw;
+    height: inherit;
+    background: linear-gradient(to top, rgb(157, 113, 3),rgb(233, 175, 28));
+    transition: all 0.5s ease;
+}
+.background2{
+    width: 100vw;
+    height: inherit;
+    background: linear-gradient(to top, rgb(0, 192, 96),rgb(0, 184, 77));
+transition: all 0.5s ease;
+
+}
+.background{
+    display: flex;
+    height: inherit;
+    position: absolute;
+    width: 200vw;
+} 
+.texts{
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 32rem;
+    color: antiquewhite;
+    position: absolute;
+    z-index: 10;
+    -webkit-text-stroke: 5px black;
+}
+.text1{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.4s ease;
+}
+.text2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+}
+.slider-images{
+    z-index: 50000000;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+}
+.bottleshadow{
+    width: 400px;
+    height: 550px;
+    opacity: 0.5;
+    bottom: 5%;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.slider-images .wrapper img{
+    position: absolute;
+   
+    transition: all 0.6s ease-in-out;}
+   
+.wrapper{
+    position: relative;
+    width: 240px;
+    height: 416px;
+    z-index: 5000;
+ mask: url(images/Untitled-1.png);  
+ filter: grayscale(10%)
+}
+.makette{
+    mix-blend-mode:soft-light; 
+transform: perspective(400px)
+rotateY(15deg) scale(0.92);
+transform-origin: center;
+
+}
+
+.makette2{
+  mix-blend-mode:soft-light; 
+    transform: perspective(400px)
+rotateY(-10deg)  translate(-57%) scaleX(1.18) scaleY(1.05);
+
+transform-origin: center;
+}
+.lime-wrapper{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+ 
+z-index: 10;
+transition: all 0.3s cubic-bezier(0.12, 0.48, 0.45, 0.84);
+}
+.items{
+    position: absolute;
+   width: 100%;
+   z-index: 50001;
+
+}
+
+.shadow{
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 50000;
+    filter:brightness(10%) blur(50px);
+}
+.na3na3a{
+    position: absolute;
+    width: 100vw;
+    height: 100wh;
+}
+.na3na3a img{
+    width: 100%;
+    transition: all 0.6s ease ;
+}
+
+
+
+.cider-wrapper{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: -10%;
+    transform: translateY(-100%);
+   transition: all 0.3s cubic-bezier(0.12, 0.48, 0.45, 0.84); 
+}
+.cider-wrapper img{
+    position: absolute;
+   width: 100%;
+   transition: all 0.5s ease-inout;
+
+}
+
+
